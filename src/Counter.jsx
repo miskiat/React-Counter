@@ -1,6 +1,7 @@
 import React from "react";
+import { useState } from "react";
 
-const Counter = ({ title }) => {
+const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
@@ -12,9 +13,7 @@ const Counter = ({ title }) => {
   return (
     <div>
       <p>No of Clicks: {count}</p>
-      <button onClick={handleClick}>
-        <Increment></Increment>
-      </button>
+      <button onClick={handleClick}>Increment</button>
     </div>
   );
 };
